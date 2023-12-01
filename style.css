@@ -1,0 +1,122 @@
+/* Nature:
+#6393A6, #1B5359, #2C4001, #5A7302, #465902
+Sky blue, river bue, Dark Olive, forest and Highlands Moss
+*/
+
+body {
+  background-color: #5A7302;
+  font-size: 20px;
+  text-align:center;
+}
+
+h1 {
+  background-color: #465902;
+  font-size: 50px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align:center;
+}
+
+h2 {
+  background-color: #465902;
+  font-size: 30px;
+  color: #fff;
+}
+
+nav {
+  background-color: #465902;
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  text-align:center
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  display: block;
+  line-height: 56px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li:hover {
+  background-color: #2C4001;
+  border: 1px solid #fff;
+}
+
+nav ul li:hover a {
+  color: #fff;
+}
+
+footer{
+  background-color:#6393A6;
+  color:#fff;
+  text-align:center;
+  padding: 3px;
+}
+
+/* Desktop */
+@media screen and (min-width: 993px) {
+  body{
+    background-color: rgba	rgb(90, 115, 2,1);
+    color: #fff;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgba(90, 115, 2,0.5);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: rgba(90, 115, 2,0.1);
+  }
+}
+
+  <style>
+  /*tells the browser to account for any border and padding in */
+  /*the values you specify for an element's width and height*/
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns If an element is taller than the */
+  /*element containing it, and it is floated, it will overflow outside of its container.*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
